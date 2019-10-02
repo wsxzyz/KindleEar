@@ -73,7 +73,7 @@ def getOpts(output_type='kindle', book_mode='periodical'):
     setattr(opts, "pretty_print", False)
     setattr(opts, "prefer_author_sort", True)
     setattr(opts, "share_not_sync", False)
-    setattr(opts, "mobi_file_type", 'old')
+    setattr(opts, "mobi_file_type", 'both' if book_mode == 'comic' else 'old')     
     setattr(opts, "dont_compress", True)
     setattr(opts, "no_inline_toc", True)
     setattr(opts, "toc_title", "Table of Contents")
